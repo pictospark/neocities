@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sara Taylor - pictospark</title>
+    <link rel="shortcut icon" href="../../Casio-loopy-logo.png" type="image/x-icon">
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+        <h1><img src="Untitled.gif" alt=""> About <img src="Untitled.gif" alt=""></h1>
+        <p>Sara Taylor is the protagonist of <a href="https://gamebanana.com/mods/528335">Step Right Up: Adventure Isle.</a> I have yet to meet a single person who dislikes her.</p>
+        <p>You can also kinda see the evolution of how I draw her here. That isn't important I just thought it was neat</p>
+        <a href="../gallery.html">Go Back</a>
+    </div>
+    <div class="container main" id="main">
+        <img src="ds.png" alt="">
+        <img src="1.png" alt="">
+        <img src="2.png" alt="">
+        <img src="3.png" alt="">
+        <img src="4.png" alt="">
+        <img src="5.png" alt="">
+        <img src="6.png" alt="">
+        <img src="7.jpg" alt="">
+        <img src="8.jpg" alt="">
+        <img src="9.jpg" alt="">
+        <img src="uhh.png" alt="">
+        <img src="10.png" alt="">
+        <img src="11.png" alt="">
+    </div>
+</body>
+</html>
+<style>
+    body {
+        background-image: url(bg.jpg);
+        color: black;
+        text-align: center;
+        overflow-x: hidden;
+        background-attachment: fixed;
+    }
+    .container {
+        width: 40em;
+        border: solid rgb(51, 0, 255);
+        border-image: linear-gradient(blue,rgb(28, 0, 130)) 1;
+        border-width: 2.5em 0.5em 0.5em;
+        padding: 2em;
+        background: linear-gradient(rgb(255, 255, 255),rgb(158, 183, 180));
+        margin: 5em;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    a {
+        color: rgb(60, 0, 255);
+        font-weight: 600;
+    }
+
+    .main img {
+        height: 20em;
+        transition: 0.5s;
+        padding: 1em;
+    }
+    img:hover {
+        transform: scale(1.05);
+    }
+
+    .main {
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    @media screen and (max-width:600px) {
+        .container {
+            width: 80%;
+        }
+
+        .main {
+            font-size: 10px;
+        }
+    }
+</style>

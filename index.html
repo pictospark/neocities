@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pictospark</title>
+    <link rel="shortcut icon" href="Casio-loopy-logo.png" type="image/x-icon">
+</head>
+<body>
+<div class="grid">
+    <div class="tabs">
+        <div style="display: flex; margin: 1.5em; justify-content: space-around;">
+            <div>
+                <img src="hi.gif" alt="" style="border: 0.15em rgb(193, 164, 209) solid; background: linear-gradient(rgb(16, 0, 32), rgb(0, 0, 0)); height: 15em;" >
+            </div>
+            <div>
+                <img src="piectore.png" alt="" style="width: 20em;">
+                <p id="bio" class="bio">hi! i'm an artist, gamedev, and webdev. (any prns)</p>
+                <div class="bottombar">
+                    <button onclick="changebio(0)">hi</button>
+                    <button onclick="changebio(1)">huh?</button>
+                    <button onclick="changebio(2)">likes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="funsies">
+        <p class="manidgaf">look at my funsies</p>
+        <div style="display: flex; justify-content: space-around; margin: 1em;">
+            <a href="gallery/gallery.html" style="color: rgb(193, 164, 209); font-weight: 1000; font-family:hp;">
+                <div>
+                    <img src="IMG_0820.png" alt="" class="cool">
+                </div>
+                Art Gallery
+            </a>
+            <a href="oc.html" style="color: rgb(193, 164, 209); font-weight: 1000; font-family:hp;">
+                <div>
+                    <img src="IMG_0820.png" alt="" class="cool">
+                </div>
+                OC Gallery
+            </a>
+        </div>
+        <div>
+            <img src="stamps/katyyy.webp" alt=""> <img src="stamps/aislop.webp" alt="" style="height: 1em;"> <img src="stamps/katyyy.webp" alt=""> <br>
+            <img src="stamps/ujl 01.png" alt="" style="height: 3em;">
+            <img src="stamps/ujl 02.png" alt="" style="height: 3em;">
+            <img src="stamps/cabinet.gif" alt="" style="height: 3em;">
+            <img src="stamps/snand.gif" alt="" style="height: 3em;">
+            <img src="stamps/aradia.webp" alt="" style="height: 3em;">
+            <img src="stamps/3ds.webp" alt="" style="height: 3em;">
+            <img src="stamps/bazinga.png" alt="" style="height: 3em;">
+            <img src="stamps/css.jpg" alt="" style="height: 3em;">
+            <img src="stamps/lemmein.webp" alt="" style="height: 3em;">
+            <img src="stamps/sux.png" alt="" style="height: 3em;">
+            <img src="stamps/gayschool.png" alt="" style="height: 3em;">
+            <img src="stamps/procreate.png" alt="" style="height: 3em;">
+            <img src="stamps/typos.webp" alt="" style="height: 3em;">
+            <img src="stamps/n64.png" alt="" style="height: 3em;">
+            <img src="stamps/microsoft.webp" alt="" style="height: 3em;">
+            <img src="stamps/rob.png" alt="" style="height: 3em;">
+            <img src="stamps/paint.png" alt="" style="height: 3em;">
+            <img src="stamps/kiwami.webp" alt="" style="height: 3em;">
+            <img src="stamps/firefox.png" alt="" style="height: 3em;">
+            <img src="stamps/hl.webp" alt="" style="height: 3em;">
+            <img src="stamps/blender.png" alt="" style="height: 3em;">
+        </div>
+    </div>
+    <div class="socials">
+        <div>
+            <h1 style="font-family: hp;">Links</h1>
+            <a href="https://www.youtube.com/@pictospark" target="_blank"><button class="yt" onclick="funnysound(0)"><img src="youtube-play-button-play-video-youtube-logo.svg" alt=""></button></a>
+            <a href="https://bsky.app/profile/pictospark.bsky.social" target="_blank"><button class="bsky" onclick="funnysound(0)"><img src="bluesky-icon.blue.svg" alt=""></button></a>
+            <a href="https://digispark.newgrounds.com/" target="_blank"><button class="ng" onclick="funnysound(0)"><img src="newgrounds.com.svg" alt=""></button></a>
+            <a href="https://github.com/pictospark" target="_blank"><button class="github" onclick="funnysound(0)"><img src="github-mark-white.svg" alt=""></button></a>
+            <a href="https://pictospark.itch.io/" target="_blank"><button class="itch" onclick="funnysound(0)"><img src="itchio-textless-black.svg" alt=""></button></a>
+            <br>
+            <img src="goat.png" alt="">
+        </div>
+    </div>
+</div>
+</body>
+    
+<style>
+    @font-face {
+        font-family: hp;
+        src: url(hp.ttf);
+    }
+    body {
+        background-image:url(gradient.gif);
+        text-align: center;
+        background-repeat: repeat-x;
+        background-color: rgb(0, 0, 0);
+        background-position: center;
+        background-attachment:fixed;
+        color: rgb(193, 164, 209);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-x: hidden;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-areas: "tabs socials" "funsies socials";
+        width: 60em;
+        
+    }
+
+    .tabs {
+        margin:1em;
+        background: linear-gradient(rgb(17, 0, 35),rgb(0, 0, 0));
+        border-radius: 1em;
+        border: 0.3em rgb(70, 53, 88) solid;
+        grid-area: tabs;
+    }
+
+    .funsies {
+        margin:1em;
+        background: linear-gradient(rgb(17, 0, 35),rgb(0, 0, 0));
+        border-radius: 1em;
+        border: 0.3em rgb(70, 53, 88) solid;
+        grid-area: funsies;
+    }
+
+    .socials {
+        margin:1em;
+        background: linear-gradient(rgb(17, 0, 35),rgb(0, 0, 0));
+        border-radius: 1em;
+        border: 0.3em rgb(70, 53, 88) solid;
+        grid-area: socials;
+        padding: 1em;
+    }
+
+    .socials button {
+        margin: 0.5em;
+    }
+
+    button {
+        color:rgb(116, 59, 248);
+        font-weight: 800;
+        height: 4em;
+        width: 9em;
+        background: linear-gradient(rgb(116, 59, 248),rgb(0, 0, 90));
+        border-radius: 0.5em;
+        border: 0.5em solid;
+        border-color: rgb(137, 98, 255) rgb(32, 0, 102) rgb(5, 0, 60) rgb(66, 24, 156);
+        transition: 0.2s;
+        box-shadow: rgb(0, 1, 28) 0px 0.5em;
+    }
+
+    button img {
+        height: 60%;
+        filter: drop-shadow(0 0.2em rgb(46, 27, 102));
+        mix-blend-mode:hard-light;
+    }
+
+    button:active {
+        box-shadow: rgb(0, 1, 28) 0px 0.2em;
+        transform: translateY(0.3em);
+    }
+
+    .bsky {
+        filter: hue-rotate(-30deg);
+    }
+
+    .github {
+        filter: saturate(0);
+    }
+
+    .ng {
+        filter: hue-rotate(-205deg);
+    }
+    .yt {
+        filter: hue-rotate(90deg);
+    }
+    .itch {
+        filter: hue-rotate(80deg);
+    }
+
+    .bottombar {
+        height: 3em;
+        background-color: rgb(17, 0, 35);
+        border: 0.2em rgb(10, 3, 18) solid;
+        border-radius: 10em;
+    }
+
+    .bottombar button {
+        height: 3em;
+        width: 6em;
+    }
+
+    .bio {
+        background-color: black;
+        height: 10em;
+        width: 20em;
+        border-radius: 1em;
+        border: 0.2em rgb(70, 53, 88) solid;
+        text-align: left;
+        padding: 0.3em;
+        overflow-y: auto;
+        overflow-wrap: anywhere;
+        
+    }
+
+    ::-webkit-scrollbar{
+        background-color: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: rgb(70, 53, 88);
+        border-radius: 10em;
+    }
+
+    .cool {
+        height: 10em;
+        transition: 1s;
+
+    }
+
+    .cool:hover {
+        transform: scale(1.1);
+    }
+    @media screen and (max-width:600px) {
+        body {
+            font-size: 10px;
+        }
+
+        .grid {
+            grid-template-areas: "tabs" "funsies" "socials";
+
+        }
+        .bio {
+            font-size: 15px;
+            height: 5em;
+            width: 15em;
+        }
+        .manidgaf {
+            font-size: 15px;
+        }
+    }
+
+</style>
+</html>
+<script>
+    let audio_index = [
+        "hl/bugreporter_succeeded.wav",
+        "hl/buttonclick.wav",
+        "hl/buttonclickrelease.wav",
+        "hl/buttonrollover.wav",
+        "hl/warning.wav",
+        "hl/wpn_denyselect.wav",
+        "hl/wpn_hudoff.wav",
+        "hl/wpn_moveselect.wav",
+        "hl/wpn_select.wav"
+    ]
+
+    function funnysound(i) {
+        var coolsound = new Audio
+        coolsound.src = audio_index[i]
+        coolsound.play()
+    }
+
+    let bios = [
+        "hi! i'm an artist, gamedev, and webdev. (any prns)",
+        "i am a jack-of-most-trades artist and developer. i primarily do 2D art, 3D modelling, 2D and 3D animation sometimes, game development in godot, and web development. i want to learn how to make music in the future but man that shit's hard idk how yall do it. this website serves as a pit stop to view all of or most of my works",
+        "half life, parappa the rapper, um jammer lammy, yakuza, unbeatable, monster prom, deltarune, persona, hotline 024, step right up adventure isle, vylet pony, dariacore, complextro, skateboarding"
+    ]
+
+    function changebio(i) {
+        funnysound(2)
+        document.getElementById("bio").innerText = bios[i]
+
+    }
+
+</script>
